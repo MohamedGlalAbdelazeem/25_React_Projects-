@@ -13,3 +13,52 @@ h1{
     font-size: 25px;
     border-radius: 5px;
 }
+
+.accordian-box{
+    background-color: rgba(245, 222, 179, 0.474);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordian-box .multi-selec{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.accordian-box .multi-selec:hover{
+    opacity: 0.5;
+}
+.accordian-box .item{
+    background-color: white;
+    padding: 1rem;
+    width: 50%;
+    margin: 1rem 0;
+    cursor: pointer;
+    box-shadow: 0 0 20px black inset;
+}
+
+.accordian-box .item:hover{
+    opacity: 0.8;
+}
+.accordian-box .item .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordian-box .item .title span{
+    margin-left: 3rem;
+    font-weight: 800;
+    font-size: 25px;
+
+}
+
+.ans{
+    color: green;
+    font-size: 20px;
+    font-weight: 800;
+}
