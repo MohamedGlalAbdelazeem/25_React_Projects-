@@ -1,33 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+ import './App.css'
+ import {  Routes ,Route} from 'react-router-dom';
+import Homebtns from './Homebtns';
+import Myroutes from './Myroutes';
+ 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vit t</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+       <div className='icons'>
+         <a href="https://github.com/MohamedGlalAbdelazeem" target="_blank" rel="noopener noreferrer">
+           <i className="fa-brands fa-github"></i>
+         </a>
+         <a href="https://github.com/MohamedGlalAbdelazeem" target="_blank" rel="noopener noreferrer">
+         <i className="fa-brands fa-linkedin"></i>
+         </a>
+         <a href="https://github.com/MohamedGlalAbdelazeem" target="_blank" rel="noopener noreferrer">
+         <i class="fa-brands fa-youtube"></i>
+         </a>
+         <a href="https://github.com/MohamedGlalAbdelazeem" target="_blank" rel="noopener noreferrer">
+         <i class="fa-brands fa-behance"></i>
+         </a>
+         <a href="https://github.com/MohamedGlalAbdelazeem" target="_blank" rel="noopener noreferrer">
+         <i class="fa-solid fa-user"></i>
+         </a>
+       </div>
+          <h1 className='main-title'>25 Projects with React Js <br /> By Eng Mohamed galal 😨</h1>
+       <Routes>
+          <Route path='/' element={<Homebtns/>}/>
+       </Routes>
+      <Myroutes/>
     </>
   )
 }

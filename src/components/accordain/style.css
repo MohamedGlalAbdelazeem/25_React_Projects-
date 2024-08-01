@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    margin-top: 3rem !important;
+}
+.accord{
+     margin-top: 5rem;
+}
+.home-btn{
+    margin-bottom: 1rem;
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+}
