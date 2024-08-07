@@ -25,7 +25,9 @@ function Homebtns() {
           <Link to={"/Accord"}>
               <button className='my-btn'>Accordian</button>
           </Link>
-          
+          <Link to={"/GenerateRandomcolo"}>
+              <button className='my-btn'>Genetate Random Color</button>
+          </Link>
           
       </div>
    </>

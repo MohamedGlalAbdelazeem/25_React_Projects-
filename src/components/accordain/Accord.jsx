@@ -31,7 +31,8 @@ function Accord() {
   return (
     <>
       <h1>Accordion Project</h1>
-      <div className='container accord'>
+      <hr />
+            <div className='container accord'>
         <Link to={"/"}> <button className='home-btn'>◀ Home</button></Link>
         <div className='wrapper'>
           <div className='accordian-box'>
