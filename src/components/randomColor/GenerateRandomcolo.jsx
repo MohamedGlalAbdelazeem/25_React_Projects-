@@ -6,12 +6,13 @@ function GenerateRandomcolo() {
   const [color, setColor] = useState("#000000");
   const [typeOfColor, setTypeOfColor] = useState('hex');
 
+  //Returns a random integer between 0 and length - 1.
   function randomColorUtility(length) {
     return Math.floor(Math.random() * length);
   }
 
   function handleCreateRandomHexColor() {
-    const hex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+    const hex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F']; //Declares an array hex containing possible HEX digits.
     let hexColor = "#";
     for (let i = 0; i < 6; i++) {
       hexColor += hex[randomColorUtility(hex.length)];
@@ -19,6 +20,7 @@ function GenerateRandomcolo() {
     setColor(hexColor);
   }
 
+  
   function handleCreateRandomRgbColor() {
     const r = randomColorUtility(256);
     const g = randomColorUtility(256);
@@ -33,11 +35,13 @@ function GenerateRandomcolo() {
       <hr />
       <div className='container generate-random-colo'>
         <Link to={"/"}><button className='home-btn'>◀ Home</button></Link>
+
         <div className='box'>
           <button onClick={() => setTypeOfColor("rgb")}>Create RGB Color</button>
           <button onClick={typeOfColor === "hex" ? handleCreateRandomHexColor : handleCreateRandomRgbColor}>Create Random Color</button>
           <button onClick={() => setTypeOfColor("hex")}>Create HEX Color </button>
         </div>
+        
         <div className='colored-box' style={{ backgroundColor: color }}>
             <h1>{typeOfColor}</h1>
             <h2>
