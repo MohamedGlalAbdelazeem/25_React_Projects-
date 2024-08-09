@@ -23,12 +23,17 @@ function Homebtns() {
      <h1 className='main-title'>25 Projects with React Js <br /> By Eng Mohamed galal 😨</h1>
       <div className='main-btns'>
           <Link to={"/Accord"}>
-              <button className='my-btn'>Accordian</button>
+              <button className='my-btn'>Accordian 📑</button>
           </Link>
           <Link to={"/GenerateRandomcolo"}>
-              <button className='my-btn'>Genetate Random Color</button>
+              <button className='my-btn'>Genetate Random Color 🖌</button>
           </Link>
-          
+          <Link to={"/starRating"}>
+              <button className='my-btn'>Start Rating ⭐</button>
+          </Link>
+          <Link to={"/ImageSlider"}>
+              <button className='my-btn'>Image Slider 🎴</button>
+          </Link>
       </div>
    </>
   )
